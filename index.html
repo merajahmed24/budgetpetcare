@@ -1,97 +1,136 @@
-<!DOCTYPE html>
+# Updating the HTML content according to the user's feedback:
+# - Remove duplicate "NexGard for Medium Dogs"
+# - Remove product image
+# - Center all content
+# - Keep the green header as it is, but make the header content centered and responsive
+# - Adjust container to look centered and not too wide
+
+updated_html = """<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NexGard for Medium Dogs – BudgetPetCare</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #fefefe;
-            color: #333;
-        }
-        header {
-            background: #4CAF50;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        .container {
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 1rem;
-        }
-        .product-image {
-            width: 100%;
-            max-width: 300px;
-            display: block;
-            margin: auto;
-        }
-        .buy-button {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 1rem 2rem;
-            background: #4CAF50;
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .badges img {
-            width: 50px;
-            margin: 0 10px;
-        }
-        .section {
-            margin-top: 2rem;
-        }
-        .reviews, .faq {
-            background: #f9f9f9;
-            padding: 1rem;
-            border-radius: 5px;
-        }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            font-size: 0.9rem;
-            color: #999;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexGard for Medium Dogs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      text-align: center;
+    }
+    header {
+      background: linear-gradient(to right, #4CAF50, #43A047);
+      color: white;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1rem;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      padding: 2rem 1rem;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      border-radius: 8px;
+    }
+    .price {
+      font-size: 1.8rem;
+      color: #e67e22;
+    }
+    .buy-button {
+      display: inline-block;
+      background: #4CAF50;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      margin: 1.2rem 0;
+      transition: background 0.3s ease;
+    }
+    .buy-button:hover {
+      background: #388E3C;
+    }
+    .badges {
+      margin: 1rem 0;
+    }
+    .badges img {
+      width: 40px;
+      margin: 0 8px;
+      vertical-align: middle;
+    }
+    .section {
+      margin-top: 2rem;
+      text-align: left;
+    }
+    .section h3 {
+      margin-bottom: 0.5rem;
+      color: #2c3e50;
+    }
+    .reviews, .faq {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      text-align: left;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>NexGard for Medium Dogs (10.1–24 lbs)</h1>
-        <p>Protect your pet from fleas and ticks – fast & effective!</p>
-    </header>
-    <div class="container">
-        <img class="product-image" src="https://www.budgetpetcare.com/images/products/nexgard-dog-blue.png" alt="NexGard for Medium Dogs">
-        
-        <h2><img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" width="18" alt="Check" /> Nexgard for Medium Dogs</h2>
-        <h2 style="color:#e67e22;">$74.89 Only</h2>
-        <a class="buy-button" href="https://www.tkqlhce.com/click-101462994-13313337?url=https%3A%2F%2Fwww.budgetpetcare.com%2Fnexgard-chewables-for-medium-dogs-101-24-lbs-blue-28mg-pack%2Fdog-flea-and-tick-treatment-318-908.aspx%3Futm_source%3Dcjfeed&cjsku=908" target="_blank">Buy Now With Discount</a>
+  <header>
+    <h1>NexGard for Medium Dogs (10.1–24 lbs)</h1>
+    <p>Protect your pet from fleas and ticks – fast & effective!</p>
+  </header>
+  <div class="container">
+    <p class="price">$74.89 Only</p>
+    <a class="buy-button" href="https://www.tkqlhce.com/click-101462994-13313337?url=https%3A%2F%2Fwww.budgetpetcare.com%2Fnexgard-chewables-for-medium-dogs-101-24-lbs-blue-28mg-pack%2Fdog-flea-and-tick-treatment-318-908.aspx%3Futm_source%3Dcjfeed&cjsku=908" target="_blank">Buy Now With Discount</a>
 
-        <div class="badges" style="margin-top: 20px;">
-            <img src="https://cdn-icons-png.flaticon.com/512/891/891419.png" alt="Secure Checkout" title="Secure Checkout" />
-            <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Fast Shipping" title="Fast Shipping" />
-            <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Vet Recommended" title="Vet Recommended" />
-        </div>
-
-        <div class="section reviews">
-            <h3>Customer Reviews</h3>
-            <p>⭐⭐⭐⭐⭐ "It works great for my dog! No fleas at all!"</p>
-            <p>⭐⭐⭐⭐ "Vet recommended and I'm happy with the result!"</p>
-        </div>
-
-        <div class="section faq">
-            <h3>FAQs</h3>
-            <p><strong>Is it safe?</strong> – Yes, it's vet-approved and FDA approved.</p>
-            <p><strong>How long does it last?</strong> – Each chew protects for 30 days.</p>
-        </div>
+    <div class="badges">
+      <img src="https://cdn-icons-png.flaticon.com/512/891/891419.png" alt="Secure Checkout" />
+      <img src="https://cdn-icons-png.flaticon.com/512/833/833472.png" alt="Fast Shipping" />
+      <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png" alt="Vet Recommended" />
     </div>
-    <footer>
-        &copy; 2025 BudgetPetCare.me | All rights reserved.
-    </footer>
+
+    <div class="section reviews">
+      <h3>Customer Reviews</h3>
+      <p>⭐⭐⭐⭐⭐ “It works great for my dog! No fleas at all!”</p>
+      <p>⭐⭐⭐⭐ “Vet recommended and I'm happy with the result!”</p>
+    </div>
+
+    <div class="section faq">
+      <h3>FAQs</h3>
+      <p><strong>Is it safe?</strong> – Yes, it's vet-approved and FDA approved.</p>
+      <p><strong>How long does it last?</strong> – Each chew protects for 30 days.</p>
+    </div>
+  </div>
+  <footer>
+    &copy; 2025 BudgetPetCare.me | All rights reserved.
+  </footer>
 </body>
 </html>
+"""
+
+# Save to file
+updated_html_path = "/mnt/data/index_final.html"
+with open(updated_html_path, "w") as f:
+    f.write(updated_html)
+
+updated_html_path
