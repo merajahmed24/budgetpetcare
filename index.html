@@ -6,18 +6,24 @@
   <title>NexGard for Medium Dogs</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
       margin: 0;
       padding: 0;
+      font-family: 'Poppins', sans-serif;
       background: #f5f5f5;
-      text-align: center;
       color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
     header {
       background: linear-gradient(to right, #4CAF50, #43A047);
       color: white;
       padding: 1.2rem 1rem;
+      text-align: center;
     }
     header h1 {
       font-size: 1.5rem;
@@ -27,13 +33,21 @@
       font-size: 0.95rem;
       margin-top: 0.3rem;
     }
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
     .container {
       max-width: 600px;
-      margin: 2rem auto;
+      width: 100%;
       background: #fff;
       padding: 1.5rem;
       border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.06);
+      text-align: center;
     }
     .price {
       font-size: 1.6rem;
@@ -74,10 +88,11 @@
       margin-top: 1rem;
     }
     footer {
+      text-align: center;
       font-size: 0.85rem;
       color: #777;
-      margin-top: 2rem;
       padding: 1rem;
+      background: #f5f5f5;
     }
   </style>
 </head>
@@ -87,27 +102,29 @@
     <p>Protect your pet from fleas and ticks – fast & effective!</p>
   </header>
 
-  <div class="container">
-    <h2>✅ Vet Recommended Treatment</h2>
-    <p class="price">$74.89 Only</p>
-    <a class="buy-button" href="https://www.tkqlhce.com/click-101462994-13313337?url=https%3A%2F%2Fwww.budgetpetcare.com%2Fnexgard-chewables-for-medium-dogs-101-24-lbs-blue-28mg-pack%2Fdog-flea-and-tick-treatment-318-908.aspx%3Futm_source%3Dcjfeed&cjsku=908" target="_blank">🛒 Buy Now With Discount</a>
+  <main>
+    <div class="container">
+      <h2>✅ Vet Recommended Treatment</h2>
+      <p class="price">$74.89 Only</p>
+      <a class="buy-button" href="https://www.tkqlhce.com/click-101462994-13313337?url=https%3A%2F%2Fwww.budgetpetcare.com%2Fnexgard-chewables-for-medium-dogs-101-24-lbs-blue-28mg-pack%2Fdog-flea-and-tick-treatment-318-908.aspx%3Futm_source%3Dcjfeed&cjsku=908" target="_blank">🛒 Buy Now With Discount</a>
 
-    <div class="badges">
-      🛒 ❤️ ✅ 💯 🔒
-    </div>
+      <div class="badges">
+        🛒 ❤️ ✅ 💯 🔒
+      </div>
 
-    <div class="section reviews">
-      <h3>⭐ Customer Reviews</h3>
-      <p>🌟🌟🌟🌟🌟 “It works great for my dog! No fleas at all!”</p>
-      <p>🌟🌟🌟🌟 “Vet recommended and I'm happy with the result!”</p>
-    </div>
+      <div class="section reviews">
+        <h3>⭐ Customer Reviews</h3>
+        <p>🌟🌟🌟🌟🌟 “It works great for my dog! No fleas at all!”</p>
+        <p>🌟🌟🌟🌟 “Vet recommended and I'm happy with the result!”</p>
+      </div>
 
-    <div class="section faq">
-      <h3>📌 FAQs</h3>
-      <p><strong>Is it safe?</strong> – ✅ Yes, it's vet-approved and FDA approved.</p>
-      <p><strong>How long does it last?</strong> – ⏳ Each chew protects for 30 days.</p>
+      <div class="section faq">
+        <h3>📌 FAQs</h3>
+        <p><strong>Is it safe?</strong> – ✅ Yes, it's vet-approved and FDA approved.</p>
+        <p><strong>How long does it last?</strong> – ⏳ Each chew protects for 30 days.</p>
+      </div>
     </div>
-  </div>
+  </main>
 
   <footer>
     &copy; 2025 BudgetPetCare.me | All rights reserved.
